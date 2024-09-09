@@ -18,7 +18,7 @@ export class AuthenticateUser {
 
       return response.status(200).json({
         user: newUser.user,
-        token: newUser.user
+        token: newUser.token
       });
     } catch (error) {
       if (error instanceof Error) {
